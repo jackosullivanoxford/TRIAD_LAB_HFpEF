@@ -1,0 +1,25 @@
+# HFpEF Prediction Model
+
+XGBoost classifier for predicting heart failure with preserved ejection fraction (HFpEF).
+
+## Usage
+
+```bash
+python train.py
+```
+
+## Data Format
+
+Input CSV should contain 39 predictor columns + target (`late_HFpEF_ICD`). See `sample_data.csv` for expected format.
+
+**Predictors:**
+- Clinical: `Creatinine`, `HbA1c`, `trig`, `totalHDL`, `LDL`, `totalchol`, `Age_at_echo`, `BMI`, `totalHDL_ratio`, `LDL_to_total_ratio`, `Age_BMI_interaction`, `ICDHTN`, `AFib`, `DM`, `sex`
+- Lab means: `mean_total_bili`, `mean_MCH`, `mean_PLT`, `mean_DBP`, `mean_pulse`, `mean_MCHC`, `mean_glucose`, `mean_AST`, `mean_urea`, `mean_neutrophil`, `mean_total_protein`, `mean_eosino`, `mean_lymphocyte_count`, `mean_wbc`, `mean_hct`, `mean_SBP`, `mean_ALT`, `mean_MCV`, `mean_monocyte`, `mean_RBC`, `mean_baso`, `mean_Hb`, `mean_calcium`, `mean_ALP`
+
+## Requirements
+
+```
+xgboost>=1.7.0
+scikit-learn>=1.0.0
+pandas>=1.5.0
+```
