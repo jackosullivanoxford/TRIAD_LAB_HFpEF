@@ -80,8 +80,8 @@ TRIAD_LAB_HFpEF/
 ├── train.py          # Training pipeline
 ├── README.md
 ├── requirements.txt  # pip dependencies
-├── data.csv          # Input data (not included)
-└── model.joblib      # Trained model (also on HuggingFace)
+├── data.csv          # Input data (simulated data included)
+└── model.joblib      # Trained model (also on HuggingFace: https://huggingface.co/jackosullivan/TRIAD_LAB_HFPEF/)
 ```
 
 ## Citation
